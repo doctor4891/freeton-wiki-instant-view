@@ -1,0 +1,15 @@
+~version: "2.0"
+
+!domain: .+\.freeton\.wiki
+?exists: //*[@id="bodyContent"]
+body:     //*[@id="bodyContent"]
+title:    //*[@id="firstHeading"]
+cover: //a[@class="image"]/img
+@split_parent: //a/img
+@split_parent: //p/img
+@remove: //*[@class="mw-jump-link"]
+@remove: //*[@id="siteSub"]
+@remove: //*[@class="printfooter"]
+@remove: //*[@id="catlinks"]
+@remove: //*[@id="toc"]
+@remove: //*[@class="thumbcaption"]
